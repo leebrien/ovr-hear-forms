@@ -1,0 +1,59 @@
+{
+  "questionnaireName": "NASA Task Load Index",
+  "questions": [
+    {
+      "id": "MD",
+      "type": "slider",
+      "text": "How mentally demanding was the task?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Very Low",
+      "highLabel": "Very High"
+    },
+    {
+      "id": "PD",
+      "type": "slider",
+      "text": "How physically demanding was the task?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Very Low",
+      "highLabel": "Very High"
+    },
+    {
+      "id": "TD",
+      "type": "slider",
+      "text": "How hurried or rushed was the pace of the task?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Very Low",
+      "highLabel": "Very High"
+    },
+    {
+      "id": "OP",
+      "type": "slider",
+      "text": "How successful were you in accomplishing what you were asked to do?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Perfect",
+      "highLabel": "Failure"
+    },
+    {
+      "id": "EF",
+      "type": "slider",
+      "text": "How hard did you have to work to accomplish your level of performance?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Very Low",
+      "highLabel": "Very High"
+    },
+    {
+      "id": "FR",
+      "type": "slider",
+      "text": "How insecure, discouraged, irritated, stressed, and annoyed were you?",
+      "minValue": 1.0,
+      "maxValue": 21.0,
+      "lowLabel": "Very Low",
+      "highLabel": "Very High"
+    }
+  ]
+}

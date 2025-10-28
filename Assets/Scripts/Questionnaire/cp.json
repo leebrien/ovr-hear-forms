@@ -1,0 +1,10 @@
+{
+    "questionnaireName": "Cue Preference",
+    "questions": [
+        {
+            "id": "CuePref_1",
+            "type": "cuePreference",
+            "text": "Which cue type did you prefer?"
+        }
+    ]
+}
