@@ -28,7 +28,19 @@ Once the SDK is imported and configured, you can clone this repository and **dra
 # Note on Customization
 
 * **Participant ID Logging:** The logic for participant ID logging has not been fully implemented. You will need to adjust this functionality to fit your own project's requirements.
-* **Custom UI:** If you design your own Input UI, you must manually insert its logic into the `QuestionnaireController.cs` file, which is the core script that manipulates UI elements and interactions.
+* **Custom UI:** If you design your own Input UI, you must manually insert its logic into the `QuestionnaireController.cs` file, which is the core script that manipulates the state of UI elements and interactions.
+
+---
+
+# Project Structure
+
+| Filename | Gist Description |
+| :--- | :--- |
+| **`QuestionnaireManager.cs`** | Manages the order and flow of multiple questionnaire files and assigns the participant ID. |
+| **`QuestionnaireController.cs`** | Manages the current questionnaire's state (e.g. Title, Question), handles Forward/Back navigation, and logs the score from the active input UI view. |
+| **`QuestionnaireModel.cs`** | Loads JSON questionnaire data, tracks session responses, and saves all participant results to a persistent `VR_Questionnaire_Data.json` file. |
+| **`QuestionnaireView.cs`** | Updates the main visual elements like the questionnaire name, question text, and question index (e.g., "1 / 10"). Specific input UI views have their own file (Slider/Radio). |
+| **`QuestionnaireDataStructures.cs`** | Defines the C# classes for all data models, including questions, responses, and the final logging structure for JSON serialization. |
 
 ---
 
