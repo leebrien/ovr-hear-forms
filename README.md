@@ -38,5 +38,5 @@ This project was developed by:
 
 * Brodett, Ram David
 * David, Peter Jan
-* Lopze, Ghee Kaye
+* Lopez, Ghee Kaye
 * Sandoval, Lee Brien
