@@ -6,64 +6,56 @@
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "obstructive",
-      "highLabel": "supportive"
+      "choices": ["obstructive", "supportive"]
     },
     {
       "id": "UEQS_2",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "complicated",
-      "highLabel": "easy"
+      "choices": ["complicated", "easy"]
     },
     {
       "id": "UEQS_3",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "inefficient",
-      "highLabel": "efficient"
+      "choices": ["inefficient", "efficient"]
     },
     {
       "id": "UEQS_4",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "confusing",
-      "highLabel": "clear"
+      "choices": ["confusing", "clear"]
     },
     {
       "id": "UEQS_5",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "boring",
-      "highLabel": "exciting"
+      "choices": ["boring", "exciting"]
     },
     {
       "id": "UEQS_6",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "not interesting",
-      "highLabel": "interesting"
+      "choices": ["not interesting", "interesting"]
     },
     {
       "id": "UEQS_7",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "conventional",
-      "highLabel": "inventive"
+      "choices": ["conventional", "inventive"]
     },
     {
       "id": "UEQS_8",
       "type": "radio",
       "text": "Which word best describes your experience?",
       "steps": 7,
-      "lowLabel": "usual",
-      "highLabel": "leading edge"
+      "choices": ["usual", "leading edge"]
     }
   ]
 }

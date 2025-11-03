@@ -46,13 +46,16 @@ public class QuestionData
     public string id;
     public string type;
     public string text;
-    public string lowLabel;
-    public string highLabel;
-    // Slider-specific fields
+
+    // Slider
     public float minValue;
     public float maxValue;
-    // Radio-specific field
+
+    // Radio
     public int steps;
+
+    // Shared choice labels for both radio and multiple choice
+    public List<string> choices;
 }
 
 [Serializable]

@@ -132,23 +132,28 @@ public class QuestionnaireController : MonoBehaviour
             sliderViewGO.SetActive(true);
             forwardButton.interactable = true;
             questionnaireUIView.UpdateView(model.QuestionnaireName, qData.text, model.currentQuestionIndex, model.GetTotalQuestions());
-            sliderView.UpdateView(qData.minValue, qData.maxValue, qData.lowLabel, qData.highLabel);
+            sliderView.UpdateView(qData.minValue, qData.maxValue, qData.choices.ToArray());
         }
         else if (qData.type == "radio")
         {
             radioViewGO.SetActive(true);
             forwardButton.interactable = false;
             questionnaireUIView.UpdateView(model.QuestionnaireName, qData.text, model.currentQuestionIndex, model.GetTotalQuestions());
-            radioView.UpdateView(qData.lowLabel, qData.highLabel, qData.steps);
+
+            // Defensive: use first and last choice for labels
+            string leftLabel = (qData.choices != null && qData.choices.Count > 0) ? qData.choices[0] : "";
+            string rightLabel = (qData.choices != null && qData.choices.Count > 1) ? qData.choices[qData.choices.Count - 1] : "";
+
+            radioView.UpdateRadioView(qData.choices, qData.steps);
         }
+
         else if (qData.type == "multipleChoice")
         {
             multipleChoiceViewGO.SetActive(true);
             forwardButton.interactable = false;
             questionnaireUIView.UpdateView(model.QuestionnaireName, qData.text, model.currentQuestionIndex, model.GetTotalQuestions());
-            multipleChoiceView.ResetView();
+            multipleChoiceView.UpdateMultipleChoiceView(qData.choices);
         }
-
 
         if (model.sessionResponses.ContainsKey(qData.id))
         {

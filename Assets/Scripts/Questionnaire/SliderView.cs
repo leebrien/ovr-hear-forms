@@ -1,16 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class SliderView : MonoBehaviour
 {
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI lowLabelText;
     [SerializeField] private TextMeshProUGUI highLabelText;
 
-    public void UpdateView(float min, float max, string lowLabel, string highLabel)
+    public void UpdateView(float min, float max, string[] choices)
     {
-        lowLabelText.text = lowLabel;
-        highLabelText.text = highLabel;
+        if (choices != null && choices.Length >= 2)
+        {
+            lowLabelText.text = choices[0];
+            highLabelText.text = choices[1];
+        }
+        else
+        {
+            lowLabelText.text = "";
+            highLabelText.text = "";
+        }
 
         slider.minValue = min;
         slider.maxValue = max;

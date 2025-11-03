@@ -1,0 +1,29 @@
+{
+  "questionnaireName": "Simulation Sickness Questionnaire",
+  "questions": [
+    {
+      "id": "SSQ_1",
+      "type": "multipleChoice",
+      "text": "General discomfort",
+      "choices": ["None", "Slight", "Moderate", "Severe"]
+    },
+    {
+      "id": "SSQ_2",
+      "type": "multipleChoice",
+      "text": "Fatigue",
+      "choices": ["None", "Slight", "Moderate", "Severe"]
+    },
+    {
+      "id": "SSQ_3",
+      "type": "multipleChoice",
+      "text": "Headache",
+      "choices": ["None", "Slight", "Moderate", "Severe"]
+    },
+    {
+      "id": "SSQ_4",
+      "type": "multipleChoice",
+      "text": "Eye Strain",
+      "choices": ["None", "Slight", "Moderate", "Severe"]
+    }
+  ]
+}
