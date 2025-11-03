@@ -6,7 +6,7 @@ This project repository holds the **Unity prefab** for research questionnaire fo
 
 # Setup
 
-For compatibility, your Unity project requires the installation and configuration of the official **Meta SDK**.
+For compatibility, your Unity project requires the installation of the official **Meta SDK**.
 
 ## 1. Install Meta XR All-In-One SDK (Required)
 
@@ -21,7 +21,7 @@ Follow these steps:
 
 ## 2. Import Prefab
 
-Once the SDK is imported and configured, you can clone this repository and **drag the provided questionnaire prefab** into your Unity scene hierarchy to begin using the form.
+Once the SDK is imported, you can clone this repository and **drag the provided questionnaire prefab** into your Unity scene hierarchy to begin using the form.
 
 ---
 
