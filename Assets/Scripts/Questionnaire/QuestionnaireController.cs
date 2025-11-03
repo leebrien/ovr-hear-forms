@@ -138,7 +138,7 @@ public class QuestionnaireController : MonoBehaviour
         {
             radioViewGO.SetActive(true);
             forwardButton.interactable = false;
-            questionnaireUIView.UpdateView(model.QuestionnaireName, "", model.currentQuestionIndex, model.GetTotalQuestions());
+            questionnaireUIView.UpdateView(model.QuestionnaireName, qData.text, model.currentQuestionIndex, model.GetTotalQuestions());
             radioView.UpdateView(qData.lowLabel, qData.highLabel, qData.steps);
         }
         else if (qData.type == "multipleChoice")
