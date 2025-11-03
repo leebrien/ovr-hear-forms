@@ -36,11 +36,13 @@ Once the SDK is imported, you can clone this repository and **drag the provided 
 
 | Filename | Gist Description |
 | :--- | :--- |
+| **`QuestionnaireDataStructures.cs`** | Defines the C# classes for all data models, including questions, responses, and the final logging structure for JSON serialization. |
 | **`QuestionnaireManager.cs`** | Manages the order and flow of multiple questionnaire files and assigns the participant ID. |
 | **`QuestionnaireController.cs`** | Manages the current questionnaire's state (e.g. Title, Question), handles Forward/Back navigation, and logs the score from the active input UI view. |
 | **`QuestionnaireModel.cs`** | Loads JSON questionnaire data, tracks session responses, and saves all participant results to a persistent `VR_Questionnaire_Data.json` file. |
-| **`QuestionnaireView.cs`** | Updates the main visual elements like the questionnaire name, question text, and question index (e.g., "1 / 10"). Specific input UI views have their own file (Slider/Radio). |
-| **`QuestionnaireDataStructures.cs`** | Defines the C# classes for all data models, including questions, responses, and the final logging structure for JSON serialization. |
+| **`QuestionnaireView.cs`** | Updates the main visual elements like the questionnaire name, question text, and question index (e.g., "1 / 10"). |
+| **`SliderView.cs`** | Updates the slider visual elements like the label text and slider steps/values. |
+| **`ToggleGroupView.cs`** | Updates the visual elements for Radio and Multiple Choice. Modifies the labels, question text, and steps/values. |
 
 ---
 
